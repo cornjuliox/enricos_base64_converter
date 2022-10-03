@@ -7,7 +7,6 @@ from .back import Converter
 
 
 class ConverterFrontend(ttk.Frame):
-    # TODO: Move this class into the 'front' module
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.converter: Converter = Converter()

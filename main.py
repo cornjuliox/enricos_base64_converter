@@ -25,6 +25,7 @@ class MainApp(Tk):
     def _about(self):
         messagebox.showinfo("About this program", "Created by Enrico Tuvera Jr on October 3, 2022")
 
+
 if __name__ == "__main__":
     # root setup
     root: MainApp = MainApp()
