@@ -3,6 +3,8 @@ This is a simple desktop app used to convert blocks of text to and from base64.
 
 It's built on Python 3.10.4, GUI is built with Tkinter, and uses Python's built-in base64 module for its core functionality.
 
+The Base64 output is url safe by default.
+
 
 # How to Install
 For now, this app is shipped as source. I assume you've got Python installed already and can do the following:
