@@ -31,10 +31,10 @@ class ConverterFrontend(ttk.Frame):
 
         self.raw_label.grid(column=0, row=0)
         self.encoded_label.grid(column=1, row=0)
-        self.raw_text.grid(column=0, row=1, sticky=(N, E, W, S))
-        self.encoded_text.grid(column=1, row=1, sticky=(N, E, W, S))
-        self.clear_button.grid(column=0, row=2, sticky=(N, E, W, S), padx=5, pady=5)
-        self.go_button.grid(column=1, row=2, sticky=(N, E, W, S), padx=5, pady=5)
+        self.raw_text.grid(column=0, row=1, sticky="NEWS")
+        self.encoded_text.grid(column=1, row=1, sticky="NEWS")
+        self.clear_button.grid(column=0, row=2, sticky="NEWS", padx=5, pady=5)
+        self.go_button.grid(column=1, row=2, sticky="NEWS", padx=5, pady=5)
 
     def _clear_button(self, event):
         self.raw_text.delete(1.0, END)
