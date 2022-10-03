@@ -23,4 +23,3 @@ Usage is simple - if you want to convert plaintext to base64, paste the text int
 If you want to convert base64 to plaintext, paste the base64 string ino the box on the right-hand side and hit the "Go" button.
 
 For either option, the opposite text box has to be empty or you'll get an error. There's a "Clear" button in the lower left corner that will clear both text boxes.
-

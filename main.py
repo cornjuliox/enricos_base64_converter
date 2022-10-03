@@ -1,6 +1,5 @@
 from tkinter import *
 from tkinter import messagebox  # NOTE: this has to be explicitly imported and won't be brought in with the star import.
-from typing import Type
 
 from base64converter.front import ConverterFrontend
 
