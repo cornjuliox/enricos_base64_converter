@@ -9,7 +9,7 @@ class ConverterFrontend(ttk.Frame):
     # TODO: Move this class into the 'front' module
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.converter = Converter()
+        self.converter: Converter = Converter()
 
         self.columnconfigure(0, weight=1)
         self.columnconfigure(1, weight=1)
@@ -18,12 +18,12 @@ class ConverterFrontend(ttk.Frame):
         self._create_widgets()
 
     def _create_widgets(self):
-        self.raw_label = ttk.Label(self, text="Raw Text")
-        self.encoded_label = ttk.Label(self, text="Base64")
-        self.go_button = ttk.Button(self, text="Go!")
-        self.clear_button = ttk.Button(self, text="Clear")
-        self.raw_text = ScrolledText(self)
-        self.encoded_text = ScrolledText(self)
+        self.raw_label: ttk.Label = ttk.Label(self, text="Raw Text")
+        self.encoded_label: ttk.Label = ttk.Label(self, text="Base64")
+        self.go_button: ttk.Button = ttk.Button(self, text="Go!")
+        self.clear_button: ttk.Button = ttk.Button(self, text="Clear")
+        self.raw_text: ScrolledText = ScrolledText(self)
+        self.encoded_text: ScrolledText = ScrolledText(self)
 
         self.clear_button.bind("<Button-1>", self._clear_button)
         self.go_button.bind("<Button-1>", self._go_button)

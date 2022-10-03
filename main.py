@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import messagebox  # NOTE: this has to be explicitly imported and won't be brought in with the star import.
+from typing import Type
 
 from base64converter.front import ConverterFrontend
 
@@ -27,10 +28,10 @@ class MainApp(Tk):
 
 if __name__ == "__main__":
     # root setup
-    root = MainApp()
+    root: MainApp = MainApp()
 
     # content
-    content = ConverterFrontend(root)
+    content: ConverterFrontend = ConverterFrontend(root)
     content.grid(column=0, row=0, sticky="NEWS")
 
     root.columnconfigure(0, weight=1)
